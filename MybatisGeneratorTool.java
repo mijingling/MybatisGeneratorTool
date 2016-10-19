@@ -1,4 +1,4 @@
-package com.xxx.common.tool;
+package com.xxx.tools.mybatis;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GeneratorTool {
+public class MybatisGeneratorTool {
 
 	/********************* 动态参数 **************************/
 	private final String basePath = "d:/zzz-xxx";
@@ -45,7 +45,7 @@ public class GeneratorTool {
 
 	public static void main(String[] args) {
 		try {
-			new GeneratorTool().generate();
+			new MybatisGeneratorTool().generate();
 			// 自动打开生成文件的目录
 			Runtime.getRuntime().exec("cmd /c start explorer D:\\");
 		} catch (ClassNotFoundException e) {
