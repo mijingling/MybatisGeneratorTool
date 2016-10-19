@@ -1,0 +1,2 @@
+# MybatisGeneratorTool
+mybatis单表映射生成工具类
